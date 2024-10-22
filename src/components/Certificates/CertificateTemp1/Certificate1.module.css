@@ -1,0 +1,75 @@
+/* src/CertificateTemplate.module.css */
+
+.certificate {
+    border: 5px solid #007bff;
+    padding: 20px;
+    width: 600px;
+    height: 450px; /* Increased height for logo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 20px auto;
+    background: linear-gradient(to bottom right, #e6f7ff, #ffffff);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .orgLogo {
+    max-width: 80px; /* Set a max width for the logo */
+    max-height: 80px; /* Set a max height for the logo */
+    margin-right: 10px; /* Space between logo and certificate icon */
+  }
+  
+  .certificateIcon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #007bff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .date {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .signature {
+    margin-top: 50px;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Add a background image (optional) */
+  .certificate::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-image: url('/abstract-background.jpg'); Add your own image path */
+    background-size: cover;
+    opacity: 0.1; /* Make it subtle */
+    border-radius: 15px;
+    z-index: -1; /* Send it behind the content */
+  }
+  
