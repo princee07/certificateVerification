@@ -5,7 +5,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 import NavbarTemp from './components/Navbars/NavbarTemp/NavbarTemp'; // Fixed typo in import path
 import LogoUploader from './components/Certificates/CertificateTemp1/LogoUpload';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './pages/Login'; // Assuming you have a Login component in pages folder
+import Login from './components/Login&Signup/Login'; // Assuming you have a Login component in pages folder
 
 const App = () => {
   const [name, setName] = useState('John Doe'); // Replace with actual name input
